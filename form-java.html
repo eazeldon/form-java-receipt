@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<!----Navbar------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!----------color-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet"/>
+ 
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     
+<!----Navbar------>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <!--------color-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    
+
+ 
+
+    <title>Form validation Java</title>
+  </head>
+  <style>
+
+    /*'''''''''''''''''''''''''''''''''''*/
+  /*  #file {
+      padding-top: 20px;
+   
+    }*/
+    .image-jpg {
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 700px;
+      width: 600px;
+      margin-bottom: 40px;
+      margin-left: 40px;
+      padding-top: 20px;
+    
+    }
+    /*Upload Receipt here, enter Your details, please read*/
+    /*file*/
+    .margin-top{
+      padding-top: 70px;
+      padding-left: 60px;
+      padding-right: 40px;
+      
+     
+    }
+    .form-control input{
+    
+      border-color: black ;
+     
+      padding-top: 20px;
+      margin-top:20px;
+      margin-right:10px;
+      margin-left:10px;
+      width: 300px;
+      height:50px;
+      margin-bottom: 5px;
+
+      border-style: solid;
+      border-color: blue;
+      border-radius: 20px;
+     
+    }
+    
+    .button-submit {
+      width: 200px;
+      height:50px;
+      margin-bottom: 50px;
+      /*background-color: #007bff80;*/
+      /*background-color: #2D46B9;*/
+    }
+   .container-box2 {
+      justify-content: center;
+      border-style: solid;
+      border-color: blue;
+      border-radius: 20px;
+      padding-left: 3%;
+      padding-right: 3%;
+      margin-left: 20px;
+      margin-right: 30px;
+      padding-top: 4%;
+      padding-bottom: 5%;
+      margin-bottom: 30px;
+      background-color: #c4deff57;
+      width: 350px;
+      text-align: center;
+      margin-top: 50px;
+    
+    
+      height:700px;
+
+
+    }
+
+    
+      
+
+    
+  
+    .read {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 16px;
+      letter-spacing: 2px;
+      padding-left: 10px;
+      padding-right: 10px;
+     
+     
+      
+    }
+   
+    h3 {
+      text-align: center;
+    }
+    
+ .please-read{
+   padding-top: 30px;
+ }
+ .swal-wide {
+  width:500px !important;
+
+ }
+.logo-footer{
+  height:40px;
+  /*width:90px;*/
+ /* color:white;*/
+
+}
+.about-img{
+  padding-top: 10px;
+  margin-top: 10px;
+
+}
+
+
+/**''''''''''''''''''*/
+.swal-wide{
+  width: 400px !important;
+    
+   border-style: solid;
+   border-color:  yellow;
+   border-radius: 20px;
+  
+   border: 10px double rgb(167, 167, 34);
+   /*border: 4px dashed rgb(110, 110, 16);*/
+  
+  
+  }
+  .success{
+    width: 400px !important;
+     
+   border-style: solid;
+   border-color: green;
+   border: 10px double rgb(47, 194, 55);
+   border-radius: 20px;
+  }
+  
+element.style {
+    display: block;
+    margin-top: -131px;
+}
+.showSweetAlert[data-animation=pop] {
+    -webkit-animation: showSweetAlert .3s;
+    animation: showSweetAlert .3s;
+}
+
+.datajson {
+  margin-left: 15px;
+}
+
+
+.margin{
+  margin-left: 15px;
+}
+pre {
+  color: green;
+  margin-left: 30px;
+  font-size: 16px;
+  
+  
+}
+#border-color {
+  border: 5px double rgb(167, 167, 34);
+
+}
+.box2-extension{
+  justify-content: center;
+      border-style: solid;
+      border-color: green;
+      border-radius: 20px;
+      background-color: rgb(241, 241, 248);
+    
+  
+
+}
+
+
+.demo{
+ width: 600px;
+ height: 600px;
+ margin-bottom: 20px;
+ margin-right: 20px;
+ padding: 30px;
+ 
+}
+.contact-demo {
+  margin-left: 80px;
+  padding: 60px;
+}
+  
+.btn-info {
+  padding: 30px;
+}
+  </style>
+  
+  <body id="home" class="color">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+          <a class="navbar-brand" href="#home"><img class="logo" src="css/image/plexian_logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#receipt">Upload</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#about">About</a>
+                </li>
+ 
+ 
+             </ul>
+ 
+          </div>
+       </div>
+    </nav>
+   
+    <!----Cover Image----------->
+          <div class="cover-image">
+            <!--<img src="css/image/bfly-shopping-bag.png">-->
+
+
+
+          <p><h1 id="prototype" class="prototype">Receipt Prototype</h1></p>
+
+
+          </div>
+
+    <!-------Form--------------->
+    
+    
+
+   <div class="container-fluid box2" style="padding-top: 10px">
+    <div class="text-center">
+   <!---- <h1>Form Javascript</h1>--->
+  </div>
+   
+   <form id="form" method="POST" enctype="multipart/form-data">
+    
+    <div class="row row-cols-4"> 
+   
+       
+     <div id="" class="col margin-top">
+        <div class="ml-5">
+          <h3 id="receipt">Upload Receipt Here</h3>
+          <br>
+        </div>   
+      <input type="file" id="file" class="form-control image-jpg mb-10" accept=".png, .jpg, .jpeg, .pdf">
+    
+  </div>
+         <br>
+         
+
+        <br>
+         <div class="col margin-top container-box2">
+          
+            <div class="details">
+              <h3>Enter Your Details</h3>
+            
+              <br>
+            
+            </div>
+         
+           <input type="text" id="email" placeholder="Email" class="form-control"><br>
+           <input type="text" id="store" placeholder="Store" class="form-control"><br>
+           <textarea type="text" id="item"  cols="10" rows="5"placeholder="Item: Orange juice 1kg/milk 2lt/egg/T-shrit small-2pcs/" class="form-control"></textarea><br>
+           <input type="text" id="amount" placeholder="Amount Kr:" class="form-control"><br>
+        
+           <button type="submit" id="submit"  class="btn btn-primary button-submit">Submit</button>
+          
+          </div>
+
+        
+           <!----Read--------->
+        
+         <div class="col">
+          <br>
+             <h3 class="mr-5 mt-4 please-read">Please Read</h3>
+             <div class="read-me">
+              <ul>
+                <li class="read ml-5 mr-5">
+                  Choose file(image receipt), only png/jpg.
+                 </li>
+                 <li class="read ml-5 mr-5">
+                      Demo test only no need for your real email. 
+                      name@example.com
+                  </li>
+                  <li class="read ml-5 mr-5">
+                      To avoid warning sign, please don't leave the form fields empty. 
+                  </li>
+                 
+             </ul>
+           
+
+            </div>
+            <!------------->
+
+           
+            <div id="msg">
+              <h4 class="h4-datajson text-center">Receipt details in data Json here:</h4>
+              <hr>
+              <pre></pre>
+             
+             
+           </div>
+
+         
+
+         
+       
+        </div><!--Row--->
+    </form>
+    
+  </div>  
+</div>
+<!-----------Demo contact------------box2-extension--------------> 
+        <div class="box2-extension">
+              <div class="row row-cols-2">
+                
+                <div class="col contact-demo">
+           <!----  <div class="contact-img">
+              
+              <br><img class="demo" src="css/image/storage1.png">
+           
+             </div>-->
+
+
+             <h3>You can check the other demo site here</h3>
+               <br>
+               <h3><a href="https://storage-sending.herokuapp.com/" class="btn btn-info">Send to Storage</a></h3>
+                
+               <br>
+            
+            
+            </div><!---Col md 6-->
+
+          <!----   <div class="col-sm-3 text-center contact-demo"> 
+               <br>
+             <h5>You can check the demo site here</h5>
+               <br>
+               <h5><a href="#" class="btn btn-info">Demo site</a></h5>
+                 <br>
+             </div>---col-->
+             
+                 <div class="col text-center contact-demo"> 
+                 <div class="download-image">
+                 <h3>Download image receipt for testing</h3>
+                 <ul>
+                  <a href="css/image/ica-1.png" download="ica-1.png" alt="ica"><h4>ica-1.png</h4></a>
+                  <br>
+                  <a href="css/image/target-1.jpg" download="target-1.jpg" alt="target"><h4>target-1.jpg</h4></a>
+                  <br>
+                  <a href="css/image/receipt-5.png" download="receipt-5.png" alt="hawaii poke"><h4>receipt-5.png</h4></a>
+                  <br>
+                 </ul>
+
+               </div>
+            </div><!--Col-->
+            
+             </div>
+            
+          </div>
+        </div> 
+        
+    
+  <!---------About---------------------------> 
+  <div id="about" class="container-fluid box3">
+    <br>
+    <h1 class="text-center">About</h1>
+    <div class="row">
+ 
+       <div class="col-md-6 about-text">
+          <h3 class="">Demo site only</h3>
+         
+          
+          <ul>
+           <!--  <li>-->
+                <strong>User story</strong>
+                <br>
+                <p>
+             
+                  As a company, we want to showcase this app so that potential visitors get an idea of how they can use the app. This site is for demo purposes only and uses very simple code.
+                  </p>
+   
+                <br>
+              
+                <strong> Upload receipt and details</strong>
+                <br>
+                <p>
+                  This app is a receipt uploader for cashbacks. The visitor can enter their information regarding what store and item they purchased in order to receive a cashback.
+               
+               </p>
+               
+             <br>
+           
+                <strong>klippa</strong>
+                 <br>
+                <p>
+              
+                Klippa is an API Storage that process and scan receipts or documents.
+               </p>
+             <br>
+ 
+ 
+             <strong>Deployment and Code use</strong>
+             <br>
+               <p>
+           
+                 Code used in this app is HTML, CSS, JavaScript, and Node.js. It was deployed to GitHub and Heroku. The server used is postman and Klippa (To be confirmed).
+ 
+ 
+              </p>
+
+              <br>
+        
+              <strong>Send to Storage </strong>
+              <br>
+               <p>
+            
+               The users of the app only have the option to send their email and image receipt, to the storage(Klippa) for cash back.
+            
+            
+            </p>
+           <br>
+  
+           <strong>Acknowledgement</strong>
+                    <br>
+                   <p>
+                  
+                      This app was made by Eazel Don Frantzich (Intern) who also edited all pictures used.
+                  
+                  </p>
+                 <br>
+  
+                 
+  
+  
+              </ul>
+  
+  
+  
+           </div>
+
+   <!-------about Images--------------------------> 
+   <div class="col-md-6 text-center  about-img">
+    <br>
+
+    <p><img class="shopping-img" src="css/image/shopping.png"></p>
+    <br>
+
+    <p><img class="gift" src="css/image/gift.png"></p>
+    <br>
+    <p><img class="credit-shop" src="css/image/creditShop1.jpg"></p>
+
+    <br>
+
+    <!---- <img class="gift" src="css/image/gift.png">-->
+
+
+ </div>
+
+
+
+</div>
+
+</div> 
+<!------------Fotter-->  
+<footer class="footer1 container-fluid text-center">
+  <h1></h1>
+
+
+  <br>
+  <div class="container-footer icons">
+     <div class="row">
+        <div class="col-md-6">
+           <p><a href="#"><img class="mr-3" src="css/image/facebook.png"></a><a href="#"><img class="mr-3"
+                    src="css/image/instagram.png"></a><a href="#"><img class="mr-3" src="css/image/twitter.png"></a>
+           </p>
+           <h5 calss="by">By: E. D. F.</h5>
+        </div>
+        <div class="col-md-6 text-center">
+           
+           <h4><img class="logo-footer" src="css/image/logo_footer.png"></h4>
+           <p><h5><a class="mr-5" href="#home">Home</a><a class="mr-5" href="#about">About</a><a class="mr-5"
+                 href="#receipt">Upload</a></h5></p>
+                <!---- <h5 calss="by">By: E. D. F.</h5>-->
+
+        </div>
+     </div>
+  </div>
+</footer>  
+    
+    <!-----Youtube ** https://www.youtube.com/watch?v=GC-9Bn7_eXs---------->
+    <!-----Bootstrap ** https://getbootstrap.com/docs/4.1/getting-started/introduction/-------->
+    <!-----Form custome ** https://sweetalert.js.org/guides/------>
+   
+    <!--- Optional JavaScript -->
+   
+    <!-----Form validation------alert------->
+    <script>
+    /* $("#submit").click(function() {
+     
+      //function TestAlert(){
+        
+        // alert("test");
+        var file = $("#file").val();
+        var email = $("#email").val();
+        var store = $("#store").val();
+        var item= $("#item").val();
+        var amount = $("#amount").val();
+        //
+
+       // alert(name);
+       if(file == '' || email == '' || store == '' || item == '' || amount == ''){
+         //alert("Please ")
+         swal({
+     
+          title: "Fields Empty!!",
+          //title: "<span style='color:#c0c241;'>warning</span>",
+          text: "Please check the missing field!",
+          icon: "warning",
+          customClass: 'swal-wide',
+          button: "Ok",
+          
+         // button: true,
+          //dangerMode: true,
+          
+        });
+       
+      } else {
+          swal("Successfully submitted", "Clicked ok!","success",{
+            
+          button: "Ok",
+        });
+      }
+    
+    
+ });
+  
+ //$('#submit').on("click",TestAlert);*/
+    
+ 
+    </script> 
+    <!------add--------->
+    <script>
+      function TestSweetAlert(){
+
+        var file = $("#file").val();
+        var email = $("#email").val();
+        var store = $("#store").val();
+        var item= $("#item").val();
+        var amount = $("#amount").val();
+        //
+
+       // alert(name);
+       if(file == '' || email == '' || store == '' || item == '' || amount == ''){
+         //alert("Please ")
+  
+  swal({
+     title: "<span style='color:#c0c241;'>Warning</span>",
+     text: "<span style='color:'#C73830;'><h4>Please check missing flieds</h4></span>",
+     html: true,
+     //type: "warning",
+     customClass: 'swal-wide',
+     //customClass: 'title',
+     button: "Ok",
+     
+     //showCancelButton: true,
+     //showConfirmButton:false
+ });
+
+    
+} else {
+         /* swal("Successfully submitted", "Clicked ok!","success",{
+            
+          button: "Ok",
+        });
+
+     }*/
+     swal({
+     title: "<span style='color:#15DB95;'><h4>Successfully Submitted<br>Thanks!</h4></span>",
+     
+     text: "<span style='color:'#C73830;'><h5>Clicked ok</h5></span>",
+     html: true,
+     
+     customClass: 'success',
+    
+     button: "Ok",
+
+     });
+    }
+
+    };
+$('#submit').on("click",TestSweetAlert);
+
+
+    </script>
+   
+    <!---------Upload image------------------>
+    <script>
+    ////////////////////image upload///////////////////////
+    const image_input = document.querySelector("#file");
+         var uploaded_image = "";
+
+         image_input.addEventListener("change", function () {
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+               uploaded_image = reader.result;
+               document.querySelector("#file").style.backgroundImage = `url(${uploaded_image})`
+            });
+            reader.readAsDataURL(this.files[0]);
+         })
+
+    </script>
+    <!---------Console------------------>
+   <script>
+      document.getElementById('form').addEventListener('submit', function(e){
+           e.preventDefault();  //prevent to submit
+         
+          
+
+           //////////////*******************''ADD
+            ///////datajson
+            
+          //////////////*******************''ADD
+
+           /////const
+             const userFile = document.getElementById('file').files[0];
+              //const userFile = document.getElementById('file').value;
+           
+              const userEmail = document.getElementById('email').value;
+             
+              const userStore = document.getElementById('store').value;
+              const userItem = document.getElementById('item').value;
+              const userAmount = document.getElementById('amount').value;
+           
+           //
+      
+          
+
+
+           ///////////////////////////,-.
+           const formData = new FormData();
+           //formData.append('user-file',userFile);
+           formData.append('document',userFile);
+           
+             
+            formData.append('user-email',userEmail);
+            
+            formData.append('user-store', userStore);
+            
+            formData.append('user-item', userItem);
+            
+            formData.append('user-amount',userAmount);
+           
+            /////ADD
+           
+           /*var myHeaders = new Headers();
+            myHeaders.append("X-Auth-Key", "SW5lNk44mf0Q65Dub6iS45xf1gaVT67b");
+            myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+            ///***-image url
+            //var urlencoded = new URLSearchParams();
+            //urlencoded.append("url","https://lh4.googleusercontent.com/-TbnUz7yFH8s/VS4tD7LCFrI/AAAAAAAAIUo/0gKt2eeVlws/s640/blogger-image--1128985135.jpg");
+            //urlencoded.append("url","https://2.bp.blogspot.com/-s4Q_BNVfS1Q/WteAk5tpnCI/AAAAAAAAA7s/U6jyyAhst645TxXveC83AKefM5NMO4m-QCLcBGAs/s1600/Coop%2B180417.jpg");
+            
+            var srcencoded = new SRCSearchParams();
+            srcencoded.append("src","#file")
+          
+
+
+            var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: crsencoded,
+            redirect: 'follow'
+            };
+
+            fetch("https://custom-ocr.klippa.com/api/v1/parseDocument/financial_full", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));*/
+ 
+           
+           
+           
+           //Addend
+
+            
+           
+         
+             fetch('https://httpbin.org/post', {
+            
+             
+           
+             method: "POST",
+             body: formData,
+            })
+
+            .then(res =>  res.json())
+            .then(data => console.log(data)) 
+         
+            .catch(err => console.log(err));
+
+            
+
+         })
+   
+    </script>
+   
+   <!-----Add fetch------------->
+    <script>
+     /* document.getElementById('form').addEventListener('submit', function(e){
+           e.preventDefault();  //prevent to submit
+           const userFile = document.getElementById('file').files[0];
+           const formData = new FormData();
+           formData.append('document', userFile, 'user-file.jpg','user-file.png','user-file.jpeg','user-file.pdf');
+           console.log('document', userFile, 'user-file.jpg','user-file.png','user-file.jpeg','user-file.pdf');
+           
+           fetch("https://custom-ocr.klippa.com/api/v1/parseDocument/bill_of_lading", { method: "POST", body: formData, headers: { 'X-Auth-Key': 'SW5lNk44mf0Q65Dub6iS45xf1gaVT67b' } })
+            // method: "POST",
+           .then(res =>  res.json())
+           .then(data => console.log(data)) 
+        
+           //.catch(err => console.log(err));
+        })*/
+  
+        
+
+    </script>
+
+    <!---------Data Json---------->
+ 
+    <script>
+      
+   //prevent to submit var --let
+      let datajsons = [];
+       const addDetails = (ev)=> {
+         ev.preventDefault();
+         var datajson = {
+            id: Date.now(),
+     
+              //file: document.getElementById('file').files[0],
+              file: document.getElementById('file').value,
+            
+
+              //file: document.getElementById('file').value[0],//reading the image
+              email: document.getElementById('email').value,
+              store: document.getElementById('store').value,
+              item: document.getElementById('item').value,
+              amount_kr: document.getElementById('amount').value,
+
+          }
+          datajsons.push(datajson);
+          document.forms[0].reset(); // clear the form for new entries
+
+
+            //display console.warn
+          
+            console.log('added' , {datajsons} );
+            let pre= document.querySelector('#msg pre');
+            pre.textContent ='\n' + JSON.stringify(datajsons, '\t', 2);
+            
+
+            // saving localStorage (inside the console)
+            localStorage.setItem('MyDatajson', JSON.stringify(datajsons) );
+
+            
+
+        }
+          document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('submit').addEventListener('click', addDetails);
+          
+            
+          });
+        
+
+    </script>
+
+    <!-----ApI----------->
+<script>
+   
+
+
+</script>
+  
+  
+  </body>
+</html>
